@@ -57,7 +57,6 @@ const handleCallback = (childData) => {
   
    return choosedEmotions;
 };
-console.log(choosedEmotions);
 
 const handleCall = (childData) => {
     if (childData.isChoosen===true ) {

@@ -19,8 +19,8 @@ const Logout = () => {
 
     return (
         <>
-       {isLogOut? <Navigate to={'/login'}/> :
-       <div className={styles.loggedIn}>
+        {isLogOut? <Navigate to={'/login'}/> :
+        <div className={styles.loggedIn}>
               <h3 className={styles.welcome}>Welcome to app</h3>  
               <button onClick={handlerLogOut} className={styles.logOut}>Log Out</button>
         </div>}

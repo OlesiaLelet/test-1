@@ -43,15 +43,6 @@ const Edit = () => {
         notion: selectedPage?.notion, 
     })
     const [choosedEmotions, setChoosedEmotions] = useState(selectedPage?.emotions);
-   
-    
-
-    // const handlerCard = (event) => {
-    //     const {name} = event.target;
-        
-    //     setCard(prev => ({...prev, mood : name}));
-        
-    // }
 
    
     const handleCallback = (childData) => {

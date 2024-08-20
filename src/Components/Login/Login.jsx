@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './Login.module.css';
-import Logout from '../Logout/Logout';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import {setLoggedIn} from '../../redux/loterySlice';
@@ -54,15 +53,12 @@ const Login = ( ) => {
 
     return (
         <div className={styles.container}>
-       {/* {isLog? <Navigate to="/logOut"/>: */}
-       <form className={styles.form}>
+        <form className={styles.form}>
             <h1 className={styles.form__title}>LOGIN FORM</h1>
             <input type='text' plaseholder="Name" value={inputValues.name} name='name' onChange={handlerInputs} className={styles.form__input}></input>
             <input type='text' plaseholder="Email" value={inputValues.email} name='email' onChange={handlerInputs} className={styles.form__input}></input>
             <button type='submit' onClick={handlerSubmit} className={styles.form__button}>LOGIN</button>
         </form>
-       
-    {/* //    } */}
 
         
         </div>

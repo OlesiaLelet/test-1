@@ -1,4 +1,3 @@
-import { useActionData } from 'react-router-dom';
 import styles from './Emotions.module.css'
 import { useState } from 'react';
 

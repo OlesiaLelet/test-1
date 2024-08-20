@@ -1,9 +1,7 @@
 import styles from './Main.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-
 import { useState } from 'react';
-
 import Edit from '../Edit/Edit';
 import editIcon  from '../../icons/edit.png'
 
@@ -32,11 +30,11 @@ const Main = () => {
                         <div className={styles.li_date}>{item.date}</div>
                         <div className={styles.li__notion}>
                         <div>
-                          <div className={styles.time}>{showTime}</div>
-                          <div className={styles.mood} >
+                           <div className={styles.time}>{showTime}</div>
+                           <div className={styles.mood} >
                             
                            {item.icon? <img src={item.icon} className={styles.mood__icon}/>:''}
-                            <div>{item.mood}</div>
+                           <div>{item.mood}</div>
                           </div>
                           
                           <div>{item.notion}</div>
