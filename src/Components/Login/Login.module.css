@@ -1,0 +1,31 @@
+.form, .loggedIn {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    align-items: center;
+    gap: 20px;
+}
+.loggedIn {
+    gap: 50px;
+}
+.form__input {
+    width: 300px;
+    height: 30px;
+
+}
+.form__button, .logOut{
+    width: 300px;
+    height: 30px;
+    background: linear-gradient(#d0dff6, #ffffff);
+    border: 1px solid grey;
+    font-size: 16px;
+}
+.form__title, .welcome {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(#d0dff6, #ffffff) ;
+}

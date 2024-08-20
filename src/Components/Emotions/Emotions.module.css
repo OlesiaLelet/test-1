@@ -1,0 +1,25 @@
+.chooseEmotions {
+    display: flex;
+    width: 500px;
+    gap: 20px
+    
+}
+.chooseEmotions__item {
+    padding: 5px 15px ;
+    
+    background-color: beige;
+    border-radius: 3px;
+}
+.activeStyle {
+    border: 2px solid yellow;
+    box-shadow: 2px 2px 15px #ffc600;
+    padding: 5px 15px ;
+    
+    background-color: beige;
+    border-radius: 3px;
+}
+input[type="checkbox"]  {
+    display: none;
+    width: 100%;
+    height: 100%;
+ }

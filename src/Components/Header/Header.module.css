@@ -1,0 +1,12 @@
+.navList {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+a.active {
+    background-color:#d0dff6;}
+
+
+

@@ -1,0 +1,38 @@
+.chooseMood {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 50%;
+   
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.chooseEmotions {
+    display: flex;
+    gap: 20px;
+
+    
+}
+.notion {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+  }
+  button {
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(#fffece, #ffffff);
+    border: 1px solid grey;
+    font-size: 16px;
+    border: 1px solid yellow;
+  }
+  button:hover {
+    box-shadow: 2px 2px 15px #ffc600;
+  }
+  
