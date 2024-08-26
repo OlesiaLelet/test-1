@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Login.module.css';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import {setLoggedIn} from '../../redux/loterySlice';
+import {setLoggedIn, setIsNotAdmin} from '../../redux/loterySlice';
 
 
 
@@ -43,9 +43,22 @@ const Login = ( ) => {
         })
      navigate('/logOut')
      dispatch(setLoggedIn());
+     if (inputValues.name!=="admin" && inputValues.email !== "admin@mail.com") {
+        dispatch(setIsNotAdmin());
         
+        
+   } 
+   
 
     }
+    // const isNotAdmin = useSelector((state) => 
+    //     state.diaryPages.isNotAdmin
+    // )
+    // const isLogged = useSelector((state) => ( state.diaryPages.isLoggedIn));
+
+    
+   
+    
 
  
 

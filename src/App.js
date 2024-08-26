@@ -40,14 +40,14 @@ function App() {
          
           
           
-          <Route element={<ProtectedRoutes/>}>
+          <Route element={<ProtectedRoutes />}>
           <Route path={paths.login} element={<Navigate to={paths.logOut}/>}></Route>
              <Route path={paths.diary} element={<Diary/>}></Route>
              <Route path={paths.main} element={<Main/>}></Route>
              <Route path={paths.edit} element={<Edit/>}></Route>
-             <Route path={paths.logOut} element={<Logout/>}></Route>
+             
           </Route>
-         
+         <Route path={paths.logOut} element={<Logout/>}></Route>
         </Routes>
 
       </BrowserRouter>

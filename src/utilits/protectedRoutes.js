@@ -1,21 +1,16 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useEffect, useState} from 'react';
+import { setIsNotAdmin } from "../redux/loterySlice";
+import { useSelector, useDispatch} from 'react-redux';
 
 
 const ProtectedRoutes = () => {
 
-    const [isNotAdmin, setIsNotAdmin] = useState(false);
-
-    useEffect (() => {
-        const user = localStorage.getItem('user');
-        const emailOfUser= localStorage.getItem('mail');
-        
-    if (user!=="admin" && emailOfUser !== "admin@mail.com") {
-         setIsNotAdmin(true);
-    }
-    }, [])
+    const isNotAdmin = useSelector((state) => 
+        state.diaryPages.isNotAdmin
+    )
+    const isLogged = useSelector((state) => ( state.diaryPages.isLoggedIn));
    
-
     
     return (
        isNotAdmin? <Navigate to={"/login"}/> : <Outlet/>  

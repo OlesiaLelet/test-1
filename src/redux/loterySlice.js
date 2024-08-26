@@ -75,6 +75,7 @@ const initialState = {
 
   ], 
   isLoggedIn: false,
+  isNotAdmin: false,
   }
 
 export const diaryPagesSlice = createSlice({
@@ -105,11 +106,17 @@ export const diaryPagesSlice = createSlice({
     },
     setLoggedOut (state, actions) {
         state.isLoggedIn= false;
+    },
+    setIsNotAdmin (state, actions) {
+        state.isNotAdmin= true;
+    },
+    setIsAdmin (state, actions) {
+        state.isNotAdmin= false;
     }
    }
   
 })
 
-export const {addNewPage, updatePage, setLoggedIn, setLoggedOut} = diaryPagesSlice.actions;
+export const {addNewPage, updatePage, setLoggedIn, setLoggedOut, setIsNotAdmin, setIsAdmin} = diaryPagesSlice.actions;
 
 export default diaryPagesSlice.reducer

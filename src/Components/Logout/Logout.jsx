@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Logout.module.css';
 import { Navigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import {setLoggedOut} from '../../redux/loterySlice';
+import {setLoggedOut, setIsAdmin} from '../../redux/loterySlice';
 
 const Logout = () => {
 
@@ -15,6 +15,7 @@ const Logout = () => {
         localStorage.removeItem("email");
         localStorage.removeItem("isLog");
         dispatch(setLoggedOut());
+        dispatch(setIsAdmin());
     }
 
     return (
